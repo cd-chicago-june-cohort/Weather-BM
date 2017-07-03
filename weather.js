@@ -47,35 +47,9 @@ console.log('NOW READY')
 
     $('#reset').click(function(){
             location.reload();    
-        
-            
-
-
-
-
-        
-            
-        // 
-            
-        // console.log(url);
-        
-        // return false;
-
+                          
     });
-
-
     
 });
 
 
-
-
-
-
-
-
-
-
-// My API key cf8903b4094a518b0d20af5a7ebe6e8b
-
-// http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&APPID=
