@@ -32,7 +32,13 @@ console.log('NOW READY')
                 var temp = weather.main.temp;
                 console.log(weather.main.temp);
                 $('#temp').append(kelToFahr(temp));
-            
+                if ((temp * (9/5) - 459.67)<80) {
+                    $('#jacket').append('<h4>Kinda chilly, you should wear a jacket.</h4>');
+                } else if ((temp * (9/5) - 459.67)>90){
+                    $('#jacket').append('<h4>A real steamer, take off your pants.</h4>');
+                } else {
+                    $('#jacket').append('<h4>A perfect day. It will likely never be this nice out again.</h4>');
+                }
             },'json');
 
             return false;
